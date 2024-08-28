@@ -1,0 +1,224 @@
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #FF6A00 0%, #EE0979 100%);
+}
+
+.menu {
+    display: none;
+}
+
+.encriptador {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(120deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+.ingreso-texto {
+    width: 100%;
+}
+
+.ocultar-ingreso {
+    display: none;
+}
+
+h1 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    color: #FFD700;
+}
+
+.centrar {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    margin: 5px;
+}
+
+button {
+    padding: 12px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 50%, rgba(200,200,200,1) 100%);
+    color: #FF6347;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+textarea {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    height: 4.5em;
+    width: 80%;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px -3px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    color: #fff;
+}
+
+textarea::placeholder {
+    color: #ffcccb;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: #FFD700;
+}
+
+.autoDestruccion {
+    color: #FF4500;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.resultado {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    display: none;
+}
+
+.desincriptadora {
+    width: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 540px) {
+    .container {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .opciones {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .encriptador, .desincriptadora {
+        width: 100%;
+        height: 100%;
+    }
+
+    .encriptador {
+        background: linear-gradient(310deg, rgba(252,176,69,1) 20%, rgba(243,129,129,1) 52%, rgba(255,107,107,1) 89%);
+    }
+
+    .desincriptadora {
+        background: linear-gradient(121deg, rgba(237,33,124,1) 29%, rgba(251,72,143,1) 52%, rgba(255,99,146,1) 74%);
+    }
+
+    .info {
+        text-align: justify;
+        font-size: 1em;
+        width: 95%;
+    }
+
+    textarea {
+        height: 2.7em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .opciones {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .encriptador, .desincriptadora {
+        width: 100%;
+        height: 100%;
+    }
+
+    .encriptador {
+        background: linear-gradient(310deg, rgba(252,176,69,1) 20%, rgba(243,129,129,1) 52%, rgba(255,107,107,1) 89%);
+    }
+
+    .desincriptadora {
+        background: linear-gradient(121deg, rgba(237,33,124,1) 29%, rgba(251,72,143,1) 52%, rgba(255,99,146,1) 74%);
+    }
+
+    .info {
+        text-align: justify;
+        font-size: 1em;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        text-align: justify;
+        font-size: 1.2em;
+        width: 70%;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .info {
+        text-align: justify;
+        font-size: 1.2em;
+        width: 70%;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+
+
